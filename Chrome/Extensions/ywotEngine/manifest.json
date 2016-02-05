@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+
+  "name": "YourWorldOfTextEngine",
+  "short_name": "ywotEngine",
+  "description": "Ultimate extension tool that refines the 'www.yourworldoftext.com' page.",
+  "version": "0.1",
+
+  "page_action": {
+    "default_icon": "assets/img/icon.png",
+  },
+  "content_scripts": {
+	"matches": ["http://www.yourworldoftext.com/*"],
+	"css": ["assets/css/engine_style.css"],
+	"js": ["assets/js/engine.js"]
+  },
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ]
+}
