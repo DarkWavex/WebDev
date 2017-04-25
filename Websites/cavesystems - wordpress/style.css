@@ -1,0 +1,35 @@
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    height: 480px;
+}
+
+.horz_line{
+    width: 100%;
+    margin-left: -1px;
+    margin-bottom: 0px;
+}
+
+.navigation_menu{
+    padding: 0px;
+    margin: 0px;
+    margin-left: -1px;
+    list-style-type: none;
+}
+
+.navigation_menu_horz li{
+    float: left;
+    display: inline;
+}
+
+.navigation_menu_vert li{
+    margin-left: 1px;
+    float:none;
+    display: block;
+}
+
+.logo_margin{
+    margin-left: -2px;
+    margin-bottom: 3px;
+}
