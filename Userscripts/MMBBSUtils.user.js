@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         MMBBSUtils
 // @namespace    http://raw-onslaught.ddns.net/
-// @version      1.0
+// @version      1.1
 // @description  Multimedia BBS Berufsschule - Utilities & Extensions.
-// @author       TheCharmingCthulhu
+// @author       TheCharmingCthulhu,littlejak20
 // @match        http://www.mmbbs.de/*
 // @grant        none
 // @require      http://code.jquery.com/jquery-latest.js
@@ -34,16 +34,23 @@
     menu += '<a href="">Werkzeuge</a>';
     menu += '<ul>';
     menu += '<li>';
-    menu += '<a href="http://stundenplan.mmbbs.de/plan1011/klassen/' + (today.getWeek() < 10 ? "0" : "") + today.getWeek() + '/c/' + classID +'.htm">Stundenplan</a>';
+    menu += '<a class="tools" href="http://stundenplan.mmbbs.de/plan1011/klassen/' + (today.getWeek() < 10 ? "0" : "") + today.getWeek() + '/c/' + classID +'.htm">Stundenplan Woche ' + (today.getWeek() < 10 ? "0" : "") + today.getWeek() + '</a>';
     menu += '</li>';
     menu += '<li>';
-    menu += '<a href="http://stundenplan.mmbbs.de/plan1011/ver_kla/' + (today.getWeek() < 10 ? "0" : "") + today.getWeek() + '/c/' + proxyID +'.htm">Vertretungsplan</a>';
+    menu += '<a class="tools" href="http://stundenplan.mmbbs.de/plan1011/ver_kla/' + (today.getWeek() < 10 ? "0" : "") + today.getWeek() + '/c/' + proxyID +'.htm">Vertretungsplan Woche ' + (today.getWeek() < 10 ? "0" : "") + today.getWeek() + '</a>';
     menu += '</li>';
     menu += '<li>';
-    menu += '<a href="' + blockPlan + '">Blockplan: 2016 - 2017</a>';
+    menu += '<a class="tools" href="' + blockPlan + '">Blockplan: 2016 - 2017</a>';
     menu += '</li>';
     menu += '</ul>';
     menu += '</li>';
 
     $(".menu").append(menu);
+    //$("#mitte").html('<iframe style="width: 100%; height: 5000px; border: 0; overflow: hidden;" src="http://stundenplan.mmbbs.de/plan1011/ver_kla/' + (today.getWeek() < 10 ? "0" : "") + today.getWeek() + '/c/' + proxyID +'.htm""></iframe>');
+    
+    $(".tools").on("click", function(e) {
+        e.preventDefault();
+        $("#mitte").html('<iframe style="width: 100%; height: 5000px; border: 0; overflow: hidden;" src="'+$(this).attr('href')+'"></iframe>');
+    });
 })();
+
