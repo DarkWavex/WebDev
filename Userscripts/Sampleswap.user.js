@@ -1,14 +1,14 @@
 // ==UserScript==
 // @name         Sampleswap
 // @namespace    http://raw-onslaught.ddns.net/
-// @version      0.1
+// @version      0.2
 // @description  Automatization features
 // @author       TheCharmingCthulhu
 // @require      https://gist.github.com/raw/2625891/waitForKeyElements.js
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js
 // @match        http://sampleswap.org/*
-// @downloadURL  http://raw-onslaught.ddns.net/js/userscripts/Sampleswap.user.js
-// @updateURL 	 http://raw-onslaught.ddns.net/js/userscripts/Sampleswap.user.js
+// @downloadURL  https://github.com/TheCharmingCthulhu/WebDev/raw/master/Userscripts/Sampleswap.user.js
+// @updateURL 	 https://github.com/TheCharmingCthulhu/WebDev/raw/master/Userscripts/Sampleswap.user.js
 // @grant        none
 // ==/UserScript==
 

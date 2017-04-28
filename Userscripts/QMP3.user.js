@@ -3,13 +3,13 @@
 // @namespace    http://raw-onslaught.ddns.net
 // @require      http://code.jquery.com/jquery-latest.js
 // @require      https://gist.github.com/raw/2625891/waitForKeyElements.js
-// @version      0.5
+// @version      0.6
 // @description  Youtube2MP3 extension.
 // @author       TheCharmingCthulhu
 // @match        https://www.youtube.com/*
 // @grant        none
-// @downloadURL  http://raw-onslaught.ddns.net/js/userscripts/QMP3.user.js
-// @updateURL 	 http://raw-onslaught.ddns.net/js/userscripts/QMP3.user.js
+// @downloadURL  https://github.com/TheCharmingCthulhu/WebDev/raw/master/Userscripts/QMP3.user.js
+// @updateURL 	 https://github.com/TheCharmingCthulhu/WebDev/raw/master/Userscripts/QMP3.user.js
 // ==/UserScript==
 
 waitForKeyElements("#watch-header", onPageLoad);

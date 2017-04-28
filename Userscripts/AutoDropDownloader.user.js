@@ -1,13 +1,13 @@
 // ==UserScript==
 // @name         AutoDropDownloader
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  Direct dropbox downloader.
 // @author       TheCharmingCthulhu
 // @match        https://www.dropbox.com/s/*
 // @grant        none
-// @downloadURL  http://raw-onslaught.ddns.net/js/userscripts/AutoDropDownloader.user.js
-// @updateURL 	 http://raw-onslaught.ddns.net/js/userscripts/AutoDropDownloader.user.js
+// @downloadURL  https://github.com/TheCharmingCthulhu/WebDev/raw/master/Userscripts/AutoDropDownloader.user.js
+// @updateURL 	 https://github.com/TheCharmingCthulhu/WebDev/raw/master/Userscripts/AutoDropDownloader.user.js
 // ==/UserScript==
 
 (function() {
