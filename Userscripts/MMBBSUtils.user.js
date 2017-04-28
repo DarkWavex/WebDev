@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         MMBBSUtils Test
 // @namespace    http://raw-onslaught.ddns.net/
-// @version      1.4.4
+// @version      1.4.5
 // @description  Multimedia BBS Berufsschule - Utilities & Extensions.
 // @author       littlejak20
 // @match        http://www.mmbbs.de/*
@@ -25,7 +25,7 @@
         var dayDiff = (target - jan4) / 86400000;
         var weekNr = 1 + Math.ceil(dayDiff / 7);
         weekNr -= 1;
-        if ((target.getDay()+1 == 5 && target.getHours() >= 17) || target.getDay()+1 == 6 || target.getDay()+1 == 7) {
+        if ((target.getDay() == 4 && target.getHours() >= 17) || target.getDay()+1 > 4) {
             weekNr += 1;
         }
         return weekNr;
