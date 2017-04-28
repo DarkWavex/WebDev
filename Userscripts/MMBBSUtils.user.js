@@ -1,9 +1,9 @@
 // ==UserScript==
-// @name         MMBBSUtils Test
+// @name         MMBBSUtils
 // @namespace    http://raw-onslaught.ddns.net/
 // @version      1.4.5
 // @description  Multimedia BBS Berufsschule - Utilities & Extensions.
-// @author       littlejak20
+// @author       TheCharmingCthulhu,littlejak20
 // @match        http://www.mmbbs.de/*
 // @grant        none
 // @require      http://code.jquery.com/jquery-latest.js
