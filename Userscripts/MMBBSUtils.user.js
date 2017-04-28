@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         MMBBSUtils
 // @namespace    http://raw-onslaught.ddns.net/
-// @version      1.4
+// @version      1.4.1
 // @description  Multimedia BBS Berufsschule - Utilities & Extensions.
 // @author       TheCharmingCthulhu,littlejak20
 // @match        http://www.mmbbs.de/*
@@ -26,7 +26,7 @@
         var jan4    = new Date(target.getFullYear(), 0, 4);
         var dayDiff = (target - jan4) / 86400000;
         var weekNr = 1 + Math.ceil(dayDiff / 7);
-        if target.getDay() < 6 {
+        if (target.getDay() < 6) {
             weekNr = weekNr - 1;
         }
         return weekNr;
