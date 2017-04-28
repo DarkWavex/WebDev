@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         MMBBSUtils
 // @namespace    http://raw-onslaught.ddns.net/
-// @version      1.2
+// @version      1.3
 // @description  Multimedia BBS Berufsschule - Utilities & Extensions.
 // @author       TheCharmingCthulhu,littlejak20
 // @match        http://www.mmbbs.de/*
@@ -38,6 +38,9 @@
     menu += '</li>';
     menu += '<li>';
     menu += '<a class="tools" href="http://stundenplan.mmbbs.de/plan1011/ver_kla/' + (today.getWeek() < 10 ? "0" : "") + today.getWeek() + '/c/' + proxyID +'.htm">Vertretungsplan Woche ' + (today.getWeek() < 10 ? "0" : "") + today.getWeek() + '</a>';
+    menu += '</li>';
+    menu += '<li>';
+    menu += '<a class="tools" href="http://stundenplan.mmbbs.de/plan1011/ver_kla/' + (today.getWeek() < 10 ? "0" : "") + today.getWeek() + '/w/' + proxyID +'.htm">Vertretungsplan Liste Woche ' + (today.getWeek() < 10 ? "0" : "") + today.getWeek() + '</a>';
     menu += '</li>';
     menu += '<li>';
     menu += '<a class="tools" href="' + blockPlan + '">Blockplan: 2016 - 2017</a>';
