@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         MMBBSUtils
 // @namespace    http://raw-onslaught.ddns.net/
-// @version      1.3
+// @version      1.3.1
 // @description  Multimedia BBS Berufsschule - Utilities & Extensions.
 // @author       TheCharmingCthulhu,littlejak20
 // @match        http://www.mmbbs.de/*
@@ -16,6 +16,7 @@
 
     var classID  = 'c00026';
     var proxyID = 'c00030';
+    var proxyListID = 'w00030';
     var blockPlan = 'http://www.mmbbs.de/uploads/media/IT-Blockkalender_2016_2017.pdf';
 
     Date.prototype.getWeek = function() {
@@ -40,7 +41,7 @@
     menu += '<a class="tools" href="http://stundenplan.mmbbs.de/plan1011/ver_kla/' + (today.getWeek() < 10 ? "0" : "") + today.getWeek() + '/c/' + proxyID +'.htm">Vertretungsplan Woche ' + (today.getWeek() < 10 ? "0" : "") + today.getWeek() + '</a>';
     menu += '</li>';
     menu += '<li>';
-    menu += '<a class="tools" href="http://stundenplan.mmbbs.de/plan1011/ver_kla/' + (today.getWeek() < 10 ? "0" : "") + today.getWeek() + '/w/' + proxyID +'.htm">Vertretungsplan Liste Woche ' + (today.getWeek() < 10 ? "0" : "") + today.getWeek() + '</a>';
+    menu += '<a class="tools" href="http://stundenplan.mmbbs.de/plan1011/ver_kla/' + (today.getWeek() < 10 ? "0" : "") + today.getWeek() + '/w/' + proxyListID +'.htm">Vertretungsplan Liste Woche ' + (today.getWeek() < 10 ? "0" : "") + today.getWeek() + '</a>';
     menu += '</li>';
     menu += '<li>';
     menu += '<a class="tools" href="' + blockPlan + '">Blockplan: 2016 - 2017</a>';
