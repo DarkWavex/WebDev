@@ -1,12 +1,14 @@
 // ==UserScript==
 // @name         MMBBSUtils
-// @namespace    http://raw-onslaught.ddns.net/
-// @version      1.4.5
+// @namespace    https://github.com/TheCharmingCthulhu/WebDev/raw/master/Userscripts/
+// @version      1.4.6
 // @description  Multimedia BBS Berufsschule - Utilities & Extensions.
 // @author       TheCharmingCthulhu,littlejak20
 // @match        http://www.mmbbs.de/*
 // @grant        none
 // @require      http://code.jquery.com/jquery-latest.js
+// @downloadURL  https://github.com/TheCharmingCthulhu/WebDev/raw/master/Userscripts/MMBBSUtils.user.js
+// @updateURL    https://github.com/TheCharmingCthulhu/WebDev/raw/master/Userscripts/MMBBSUtils.user.js
 // ==/UserScript==
 
 (function() {

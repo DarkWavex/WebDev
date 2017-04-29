@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Sampleswap
-// @namespace    http://raw-onslaught.ddns.net/
-// @version      0.2
+// @namespace    https://github.com/TheCharmingCthulhu/WebDev/raw/master/Userscripts/
+// @version      0.3
 // @description  Automatization features
 // @author       TheCharmingCthulhu
 // @require      https://gist.github.com/raw/2625891/waitForKeyElements.js
