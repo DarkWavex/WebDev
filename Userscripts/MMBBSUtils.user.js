@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         MMBBSUtils
 // @namespace    https://github.com/TheCharmingCthulhu/WebDev/raw/master/Userscripts/
-// @version      1.4.9
+// @version      1.4.11
 // @description  Multimedia BBS Berufsschule - Utilities & Extensions.
 // @author       TheCharmingCthulhu,littlejak20
 // @match        http://www.mmbbs.de/*
@@ -27,9 +27,10 @@
         var dayDiff = (target - jan4) / 86400000;
         var weekNr = 1 + Math.ceil(dayDiff / 7);
         weekNr -= 1;
-        console.log(target.getDay());
-        console.log(target.getDay()+1);
-        if ((target.getDay()+1 == 4 && target.getHours()+1 >= 17) || target.getDay()+1 > 4) {
+
+        var currentDate = new Date();
+        console.log(currentDate.getDay());
+        if ((currentDate.getDay() == 5 && currentDate.getHours() >= 17) || currentDate.getDay() > 5) {
             weekNr += 1;
         }
         return weekNr;
