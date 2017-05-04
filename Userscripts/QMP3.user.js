@@ -3,7 +3,7 @@
 // @namespace    https://github.com/TheCharmingCthulhu/WebDev/raw/master/Userscripts/
 // @require      http://code.jquery.com/jquery-latest.js
 // @require      https://gist.github.com/raw/2625891/waitForKeyElements.js
-// @version      0.7
+// @version      0.7.1
 // @description  Youtube2MP3 extension.
 // @author       TheCharmingCthulhu
 // @match        https://www.youtube.com/*
