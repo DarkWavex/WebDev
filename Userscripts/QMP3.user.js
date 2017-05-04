@@ -7,6 +7,7 @@
 // @description  Youtube2MP3 extension.
 // @author       TheCharmingCthulhu
 // @match        https://www.youtube.com/*
+// @exclude      http://www.mmbbs.de/*
 // @grant        none
 // @downloadURL  https://github.com/TheCharmingCthulhu/WebDev/raw/master/Userscripts/QMP3.user.js
 // @updateURL 	 https://github.com/TheCharmingCthulhu/WebDev/raw/master/Userscripts/QMP3.user.js
