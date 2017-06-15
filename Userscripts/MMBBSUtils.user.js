@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         MMBBSUtils
 // @namespace    https://github.com/TheCharmingCthulhu/WebDev/raw/master/Userscripts/
-// @version      1.4.12
+// @version      1.5.1
 // @description  Multimedia BBS Berufsschule - Utilities & Extensions.
 // @author       TheCharmingCthulhu,littlejak20
 // @match        http://www.mmbbs.de/*
@@ -18,6 +18,8 @@
     var proxyID = 'c00030';
     var proxyListID = 'w00030';
     var blockPlan = 'http://www.mmbbs.de/uploads/media/IT-Blockkalender_2016_2017.pdf';
+
+    $('head').append("<style>.news-list-item:after{content: ''; display: table; clear: both;}</style>");
 
     Date.prototype.getWeek = function() {
         var target  = new Date(this.valueOf());
