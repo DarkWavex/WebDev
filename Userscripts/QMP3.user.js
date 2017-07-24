@@ -13,7 +13,7 @@
 // @updateURL 	 https://github.com/TheCharmingCthulhu/WebDev/raw/master/Userscripts/QMP3.user.js
 // ==/UserScript==
 
-waitForKeyElements("#watch-header", onPageLoad);
+waitForKeyElements("#meta-skeleton", onPageLoad);
 
 function onPageLoad(jNode){
     var video_id = window.location.search.substring(1).split('=')[1];
