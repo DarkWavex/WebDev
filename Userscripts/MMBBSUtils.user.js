@@ -14,9 +14,9 @@
 (function() {
     'use strict';
 
-    var classID = 'c00026';
-    var proxyID = 'c00030';
-    var proxyListID = 'w00030';
+    var classID = 'c00023';
+    var proxyID = 'c00027';
+    var proxyListID = 'w00027';
     var blockPlan = 'http://www.mmbbs.de/uploads/media/2017-2018_IT-Blockplan_2016-11-18.pdf';
 
     $('head').append("<style>.news-list-item:after{content: ''; display: table; clear: both;}</style>");
